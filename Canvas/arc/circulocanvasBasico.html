@@ -8,6 +8,8 @@
 	#canvas{
 		/*border: 1px solid red;*/
 		/*background: red;*/
+
+		transform : rotate(-90deg);
 	}
 </style>
 <canvas id="canvas" width="400"  height="400">
@@ -39,7 +41,7 @@ function renderTime(){
 	ctx.lineWidth=10;
 	ctx.strokeStyle="blue";
 	ctx.stroke();
-	recorrer+=3;
+	recorrer+=5;
 }
 
 setInterval(renderTime,40);
