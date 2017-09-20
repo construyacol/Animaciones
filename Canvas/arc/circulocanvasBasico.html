@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style>
+	#canvas{
+		/*border: 1px solid red;*/
+		/*background: red;*/
+	}
+</style>
+<canvas id="canvas" width="400"  height="400">
+<h1>ss%</h1>
+</canvas>
+
+<script>
+
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");	
+
+recorrer = 0;
+
+function renderTime(){
+	
+
+	grado=Math.PI/180;
+	Xinicio=200;
+	Yinicio=200;
+	RadioCirculo=100;
+	anguloInicio=grado*0;
+	anguloFinal=grado*recorrer;
+
+
+
+
+	ctx.beginPath();
+	ctx.arc(Xinicio,Yinicio, RadioCirculo, anguloInicio, anguloFinal);
+	ctx.lineWidth=10;
+	ctx.strokeStyle="blue";
+	ctx.stroke();
+	recorrer+=3;
+}
+
+setInterval(renderTime,40);
+
+</script>
+
+</body>
+</html>

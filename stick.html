@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+<style type="text/css">
+body{
+	height: 2000px;
+}
+
+	.contenedor{
+		width: 100%;
+		height: 1000px;
+		display: flex;
+		border:1px solid red;
+	}
+	.stick{
+		width: 100%;
+		height: 80px;
+		border:1px solid red;
+
+	}
+</style>
+<div class="contenedor">
+<!-- <div style="height: 100%; width: 30%; border:1px solid black;"> -->
+	<div class="stick" id="stick">stick</div>
+	
+<!-- </div> -->
+	<div>contenido</div>
+</div>
+
+
+	<script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.js"></script>
+  <script type="text/javascript">
+  	$("#stick").stick_in_parent();
+  </script>
+</body>
+</html>

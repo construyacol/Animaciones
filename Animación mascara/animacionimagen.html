@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  
+</head>
+<body style="height: 1000px; margin: 0; padding: 0;">
+  <!-- Identify where the chart should be drawn. -->
+  <div class="contenedorsec1">
+  <img src="modelo.fw.png" class="hola">
+  </div>
+
+  <style type="text/css">
+  .hola{
+      animation: hola 1s forwards;
+      padding: 2em;
+      border-radius: .5em;
+      }
+
+      @keyframes hola{
+
+        0%{
+          clip-path: circle(0% at 0 100%);
+          /*0 en x - 100% en y*/
+        }
+
+        100%{
+          clip-path: circle(100% at center);
+
+          /*clip-path: polygon(0 0, 100% 0, 100% 50%);*/
+          /*El poligono nos deja crear la forma que queramos, con la cantidad de coordenadas en el eje x -y que deseemos*/
+
+          /*clip-path: ellipse(30% 10% at center);*/
+          /*30% en eje x y 10% en eje y*/
+
+
+          /*transform: translateY(-3000px);*/
+        }
+      }
+
+
+
+    .contenedorsec1{
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+  </style>
+</body>
+    
+</html>
